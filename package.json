@@ -1,0 +1,7 @@
+{
+  "name": "test-challenge",
+  "version": "1.0.0",
+  "description": "A module that exports multiple utility functions without any tests.",
+  "main": "lib/index.js",
+  "license": "ISC"
+}
