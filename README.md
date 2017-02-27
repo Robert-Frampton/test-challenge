@@ -1,12 +1,15 @@
-# Code challenge
+# Technical challenge
 
-## Goal
+## Requirements
 
-- 1) Create unit tests that test all exported methods of this package.
-- 2) Implement a test coverage tool and achieve 100% test coverage.
-- 3) Tests should be run with the `npm test` command.
+Implement testing framework that meets the following requirements:
 
-## Optional
+- 1) Implement an existing testing framework and create unit tests for all exported methods from the `lib/` directory.
+- 2) Implement functional tests for the `RedditFeed` metal component in `src/`.
+- 2) Implement existing test coverage tool and achieve 100% test coverage.
+- 3) Tests should be started with the `npm test` command.
 
-- 1) Configure package to use https://travis-ci.org/ continous integration.
+## Bonus Features (Not required, but desirable)
+
+- 1) Configure package to use https://travis-ci.org/ continuous integration.
 - 2) Report code coverage results on https://coveralls.io/.

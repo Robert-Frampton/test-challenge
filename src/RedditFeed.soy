@@ -1,0 +1,48 @@
+{namespace RedditFeed}
+
+/**
+ * @param? error
+ * @param feed
+ */
+{template .render}
+	<div>
+		<h1>/r/javascript</h1>
+
+		{call .controls data="all" /}
+
+		{if $error}
+			{call .error data="all" /}
+		{else}
+			{call .feed data="all" /}
+		{/if}
+	</div>
+{/template}
+
+/**
+ * @param error
+ */
+{template .error}
+	<h2>{$error}</h2>
+{/template}
+
+/**
+ * @param feed
+ */
+{template .feed}
+	<ul>
+		{foreach $post in $feed}
+			<li><a href="{$post.data.url}">{$post.data.title}</a></li>
+		{/foreach}
+	</ul>
+{/template}
+
+/**
+ * @param type
+ */
+{template .controls}
+	<div>
+		<button data-onclick="handleTypeClick" data-type="hot" {if $type == 'hot'}disabled{/if}>Hot</button>
+		<button data-onclick="handleTypeClick" data-type="new" {if $type == 'new'}disabled{/if}>New</button>
+		<button data-onclick="handleTypeClick" data-type="rising" {if $type == 'rising'}disabled{/if}>Rising</button>
+	</div>
+{/template}

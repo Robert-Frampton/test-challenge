@@ -3,5 +3,13 @@
   "version": "1.0.0",
   "description": "A module that exports multiple utility functions without any tests.",
   "main": "lib/index.js",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "build": "metal build"
+  },
+  "devDependencies": {
+    "metal-cli": "^2.1.2",
+    "metal-component": "^2.6.2",
+    "metal-soy": "^2.6.2"
+  }
 }
